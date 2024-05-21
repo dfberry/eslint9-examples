@@ -1,7 +1,9 @@
-const fs = require("fs").promises;
-const path = require("path");
+import { promises as fs } from "fs";
+import path from "path";
+import { fileURLToPath } from 'url';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const myDir = path.json(__dirname, "my-dir");
+const myDir = path.join(__dirname, "my-dir");
 console.log(myDir)
 
 class MathFunctions {

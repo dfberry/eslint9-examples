@@ -8,7 +8,6 @@ module.exports = [
     ignores: ["*.config.js"],
     languageOptions: { sourceType: "commonjs" },
   },
-  { languageOptions: { globals: globals.browser } },
   pluginJs.configs.all, /* js.configs.all or pluginJs.configs.recommended */
   eslintPluginPrettierRecommended,
 ];
