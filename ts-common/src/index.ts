@@ -35,9 +35,9 @@ console.log(mathFunctions.multiply(5, 3)); // Outputs: 15
 console.log(mathFunctions.divide(6, 3)); // Outputs: 2
 
 // Introduct error ESLint typically catches
-let x = 5;
-if (x == "5") {
-  console.log(
-    "This is an error because we're using == instead of === for comparison.",
-  );
-}
+// let x = 5;
+// if (x == "5") {
+//   console.log(
+//     "This is an error because we're using == instead of === for comparison.",
+//   );
+// }
