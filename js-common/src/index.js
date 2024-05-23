@@ -2,7 +2,7 @@ const fs = require("fs").promises;
 const path = require("path");
 
 const myDir = path.json(__dirname, "my-dir");
-console.log(myDir)
+console.log(myDir);
 
 class MathFunctions {
   add(a, b) {

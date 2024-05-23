@@ -1,10 +1,10 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const myDir = path.join(__dirname, "my-dir");
-console.log(myDir)
+console.log(myDir);
 
 class MathFunctions {
   add(a, b) {

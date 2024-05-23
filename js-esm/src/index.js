@@ -1,10 +1,9 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { fileURLToPath } from 'url';
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-const myDir = path.join(__dirname, "my-dir");
-console.log(myDir)
+import { fileURLToPath } from "url";
+const __dirname = path.dirname(fileURLToPath(import.meta.url)),
+  myDir = path.join(__dirname, "my-dir");
+console.log(myDir);
 
 class MathFunctions {
   add(a, b) {
@@ -37,7 +36,7 @@ console.log(mathFunctions.multiply(5, 3)); // Outputs: 15
 console.log(mathFunctions.divide(6, 3)); // Outputs: 2
 
 // Introduct error ESLint typically catches
-let x = 5;
+const x = 5;
 if (x == "5") {
   console.log(
     "This is an error because we're using == instead of === for comparison.",

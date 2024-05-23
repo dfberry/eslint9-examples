@@ -1,8 +1,8 @@
-const fs = require("fs").promises;
-const path = require("path");
+import { promises as fs } from "fs";
+import path from "path";
 
-const myDir = path.json(__dirname, "my-dir");
-console.log(myDir)
+const myDir = path.join(__dirname, "my-dir");
+console.log(myDir);
 
 class MathFunctions {
   add(a, b) {
