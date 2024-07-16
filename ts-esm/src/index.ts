@@ -2,13 +2,14 @@ import { promises as fs } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+import { add as libAdd } from "./lib.js";
 
 const myDir = path.join(__dirname, "my-dir");
 console.log(myDir);
 
 class MathFunctions {
   add(a, b) {
-    return a + b;
+    return libAdd(a, b);
   }
 
   subtract(a, b) {
